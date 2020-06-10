@@ -1,3 +1,4 @@
+require('dotenv').config() // to use the .env file
 require('express-async-errors')
 const express = require('express');
 const cors = require('cors');
@@ -34,5 +35,5 @@ app.listen(port, () => {
 });
 
 app.on('error', (error) => {
-     console.log("::> An error occiurred in our server " + error);
+     console.log("::> An error occurred in our server " + error);
 });
